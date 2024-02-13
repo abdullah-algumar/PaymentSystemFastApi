@@ -37,7 +37,7 @@ DATABASE_URL=postgresql://user:password@localhost/dbname
 
 
 ## To test on postman :
-### import the postman collection from [Payment Api.postman_collection.json](https://github.com/abdullah-algumar/PaymentSystemFastApi/Payment Api.postman_collection.json) file and test the endpoints.
+### import the postman collection from [Payment Api.postman_collection.json]([https://github.com/abdullah-algumar/PaymentSystemFastApi/Payment Api.postman_collection.json](https://github.com/abdullah-algumar/PaymentSystemFastApi/blob/master/Payment%20Api.postman_collection.json)) file and test the endpoints.
 
 
 ## Run Test file:
