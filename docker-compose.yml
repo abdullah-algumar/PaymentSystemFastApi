@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    environment:
+      - DATABASE_URL=postgresql://paymentuser1:123123@db/paymentdb1
+
+  db:
+    image: postgres:latest
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_USER: paymentuser1
+      POSTGRES_PASSWORD: 123123
+      POSTGRES_DB: paymentdb1
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
